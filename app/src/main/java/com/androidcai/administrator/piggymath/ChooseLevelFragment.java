@@ -9,6 +9,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class ChooseLevelFragment extends Fragment {
 
@@ -20,14 +22,64 @@ public class ChooseLevelFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
 //        Get Value From SharePerfer
+        getValueFromSharePerfer();
+
+//        Easy
+        easyController();
+//        Normal Controller
+        normalController();
+//        Hard Controller
+        HardController();
+    }   // Main Method
+
+    private void HardController() {
+        ImageView imageView = (ImageView) getView().findViewById(R.id.imageHard);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sentToPlayGame(2);
+            }
+        });
+    }
+
+    private void normalController() {
+        ImageView imageView = (ImageView) getView().findViewById(R.id.imageNormal);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sentToPlayGame(1);
+            }
+        });
+    }
+
+    private void easyController() {
+        ImageView imageView = (ImageView) getView().findViewById(R.id.imageEasy);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sentToPlayGame(0);
+            }
+        });
+    }
+
+    private void sentToPlayGame(int indexLevel) {
+
+        Log.d("10MayV1","Level ==>" + indexLevel);
+        getActivity()
+                .getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.contentNewGameFragment, NewGameFragment.newGameInstance(indexLevel))
+                .addToBackStack(null)
+                .commit();
+    }
+
+    private void getValueFromSharePerfer() {
         SharedPreferences sharedPreferences = getActivity().getSharedPreferences("MyData", Context.MODE_PRIVATE);
         modelAnInt = sharedPreferences.getInt("Mode", 0);
         userNameString = sharedPreferences.getString("Username", "");
         Log.d("10MayV1", "Mode ==> " + modelAnInt);
         Log.d("10MayV1", "User ==> " + userNameString);
-
-
-    }   // Main Method
+    }
 
     @Nullable
     @Override

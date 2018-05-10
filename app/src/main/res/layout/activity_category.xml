@@ -43,6 +43,6 @@
         android:layout_marginTop="100dp"
         android:layout_width="@dimen/icon"
         android:layout_height="@dimen/icon"
-        android:src="@drawable/minute_07" />
+        android:src="@drawable/hard2_03" />
 
 </RelativeLayout>

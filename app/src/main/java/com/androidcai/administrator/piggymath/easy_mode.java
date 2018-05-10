@@ -156,7 +156,7 @@ public class easy_mode extends AppCompatActivity {
         }catch (Exception e){
             e.printStackTrace();
         }
-    }
+    } //Save Score
     private void RandAnswer(){
         int a, b, eq;
         float tans = 0;
