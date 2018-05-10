@@ -22,12 +22,14 @@
         android:layout_y="293dp"
         android:src="@drawable/hard2_03" />
 
+    <!--Logo-->
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/chlogo"
         android:id="@+id/imageView5" />
 
+    <!--Easy-->
     <ImageView
         android:layout_width="110dp"
         android:layout_height="wrap_content"
@@ -37,6 +39,7 @@
         android:layout_y="360dp"
         android:src="@drawable/easy" />
 
+    <!--Normal-->
     <ImageView
         android:layout_width="110dp"
         android:layout_height="wrap_content"
@@ -46,6 +49,7 @@
         android:layout_y="339dp"
         android:src="@drawable/normal" />
 
+    <!--Hard-->
     <ImageView
         android:layout_width="110dp"
         android:layout_height="wrap_content"

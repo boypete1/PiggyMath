@@ -58,7 +58,9 @@
             android:label="PiggyMath"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ShowAnswer"></activity>
+        <activity android:name=".ShowAnswer" />
+        <activity android:name=".CategoryActivity" />
+        <activity android:name=".NewGameActivity"></activity>
     </application>
 
 </manifest>

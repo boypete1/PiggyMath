@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
                         sBuffer.append(strLine);
                     }
                     if(sBuffer.toString().equals(Password)){
-                        Intent intent = new Intent(MainActivity.this,choose_level.class);
+                        Intent intent = new Intent(MainActivity.this,CategoryActivity.class);
                         intent.putExtra("Username", Username);
                         startActivity(intent);
                     }else {
