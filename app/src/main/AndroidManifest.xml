@@ -60,7 +60,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ShowAnswer" />
         <activity android:name=".CategoryActivity" />
-        <activity android:name=".NewGameActivity"></activity>
+        <activity android:name=".NewGameActivity" />
+        <activity android:name=".Answer_view"></activity>
     </application>
 
 </manifest>

@@ -15,9 +15,10 @@
     android:layout_height="fill_parent">
 
     <ImageView
+
         android:id="@+id/imageHard2"
-        android:layout_width="110dp"
-        android:layout_height="70dp"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
         android:layout_x="0dp"
         android:layout_y="293dp"
         android:src="@drawable/hard2_03" />

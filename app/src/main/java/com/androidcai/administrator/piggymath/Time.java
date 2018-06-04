@@ -76,7 +76,7 @@ public class Time extends AppCompatActivity {
                         imvAnimal.setImageResource(R.drawable.imagess_25);
                         break;
                     case 12:
-                        imvAnimal.setImageResource(R.drawable.imagess_28);
+                        imvAnimal.setImageResource(R.drawable.imagess_29);
                         break;
                         default:
                             break;

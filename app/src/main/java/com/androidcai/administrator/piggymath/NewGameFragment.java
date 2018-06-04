@@ -80,6 +80,7 @@ public class NewGameFragment extends Fragment {
     private void showView(int indexInt) {
         ImageView imageView = (ImageView) getView().findViewById(R.id.imvQuestion);
         imageView.setImageResource(questionInts[0]);
+        questionInts[0] +=1;
 
         Button choice1Button = (Button) getView().findViewById(R.id.btnChoice1);
         Button choice2Button = (Button) getView().findViewById(R.id.btnChoice2);
@@ -138,7 +139,9 @@ public class NewGameFragment extends Fragment {
         int[] ints = myConstant.getEatInts();
         if (answerInt == answerInts[timesAnInt]){
             scoreAnInt += 1;
+
             textView.setText("Score = "+ Integer.toString(scoreAnInt));
+
         }else {
             indexFalse += 1;
 

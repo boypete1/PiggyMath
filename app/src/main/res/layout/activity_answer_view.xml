@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scene1"
+    android:layout_centerHorizontal="true"
+    tools:context=".Answer_view">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="#c8ffffff"
+            android:padding="@dimen/padding"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:id="@+id/answertrue"
+                android:text="เฉลยเรื่องการบอกเวลาจากนาฬิกา"
+                android:textColorHighlight="#ffffff"
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/minute_02"/>
+
+            <TextView
+
+
+                android:text="แปดนาฬิกาสิบห้านาที"
+                android:textColorHighlight="#ffffff"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/minute_05"/>
+
+            <TextView
+
+
+                android:text="แปดนาฬิกา สี่สิบนาที"
+                android:textColorHighlight="#ffffff"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/minute_07"/>
+
+            <TextView
+
+
+                android:text="0"
+                android:textColorHighlight="#ffffff"
+                android:textSize="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

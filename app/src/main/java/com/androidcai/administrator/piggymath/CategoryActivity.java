@@ -22,7 +22,18 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
         ImageView imageView3 = (ImageView) findViewById(R.id.imvCat3);
         ImageView imageView4 = (ImageView) findViewById(R.id.imvCat4);
         ImageView imageView5 = (ImageView) findViewById(R.id.imvCat5);
+        ImageView imageView6 = (ImageView) findViewById(R.id.imvCat6);
 
+        // AnswerScoreview
+        imageView6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CategoryActivity.this, Answer_view.class);
+                intent.putExtra("Username", userString);
+                startActivity(intent);
+
+            }
+        });
         imageView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

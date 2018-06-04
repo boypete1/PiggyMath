@@ -104,27 +104,27 @@ public class choose_level extends AppCompatActivity {
                     return false;
                 }
             });
-            img4.setOnTouchListener(new View.OnTouchListener() {
-                @Override
-                public boolean onTouch(View v, MotionEvent event) {
-                    switch (event.getAction()) {
-                        case MotionEvent.ACTION_DOWN: {
-                            clicksound.start();
-                            img4.setImageResource(R.drawable.hard2_03);
-                            return true;
-                        }
-                        case MotionEvent.ACTION_UP: {
-                            img4.setImageResource(R.drawable.hard2_03);
-                            startsound.stop();
-                            Intent i = new Intent(choose_level.this, Time.class);
-                            i.putExtra("Username", Username);
-                            startActivity(i);
-                            return true;
-                        }
-                    }
-                    return false;
-                }
-            });
+//            img4.setOnTouchListener(new View.OnTouchListener() {
+//                @Override
+//                public boolean onTouch(View v, MotionEvent event) {
+//                    switch (event.getAction()) {
+//                        case MotionEvent.ACTION_DOWN: {
+//                            clicksound.start();
+//                            img4.setImageResource(R.drawable.hard2_03);
+//                            return true;
+//                        }
+//                        case MotionEvent.ACTION_UP: {
+//                            img4.setImageResource(R.drawable.hard2_03);
+//                            startsound.stop();
+//                            Intent i = new Intent(choose_level.this, Time.class);
+//                            i.putExtra("Username", Username);
+//                            startActivity(i);
+//                            return true;
+//                        }
+//                    }
+//                    return false;
+//                }
+//            });
         }
 
     public void onBackPressed() {

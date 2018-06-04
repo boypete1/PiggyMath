@@ -33,7 +33,8 @@ public class NewGameActivity extends AppCompatActivity {
                     .beginTransaction()
                     .add(R.id.contentNewGameFragment, new ChooseLevelFragment())
                     .commit();
-        }
+        }//if
+
 
 
 

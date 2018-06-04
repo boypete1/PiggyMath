@@ -87,11 +87,14 @@
         android:layout_marginBottom="21dp"
         android:layout_marginEnd="19dp"
         tools:ignore="RtlCompat" />
+
     <ImageView
         android:id="@+id/imvEat"
-        android:src="@drawable/eat1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnChoice2"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/eat1" />
 
 
 

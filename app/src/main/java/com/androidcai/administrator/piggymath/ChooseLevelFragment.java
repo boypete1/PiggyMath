@@ -30,7 +30,14 @@ public class ChooseLevelFragment extends Fragment {
         normalController();
 //        Hard Controller
         HardController();
+//        True Answer Page
+        TrueAnswer();
+
     }   // Main Method
+
+    private void TrueAnswer() {
+
+    }
 
     private void HardController() {
         ImageView imageView = (ImageView) getView().findViewById(R.id.imageHard);
