@@ -6,53 +6,72 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CategoryActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Select Mode"
+        android:textSize="@dimen/h1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"
+        />
 
     <ImageView
         android:id="@+id/imvCat1"
-        android:layout_width="@dimen/icon"
-        android:layout_height="@dimen/icon"
-        android:src="@drawable/minute_02" />
+        android:layout_width="@dimen/icon1"
+        android:layout_height="@dimen/icon1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="173dp"
+        android:layout_marginEnd="48dp"
+        android:src="@drawable/icon" />
 
     <ImageView
         android:id="@+id/imvCat5"
-        android:layout_marginLeft="200dp"
-        android:layout_marginTop="200dp"
-        android:layout_width="@dimen/icon"
-        android:layout_height="@dimen/icon"
+        android:layout_width="@dimen/icon1"
+        android:layout_height="@dimen/icon1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="37dp"
+        android:layout_marginEnd="58dp"
         android:src="@drawable/imagess_21" />
 
     <ImageView
         android:id="@+id/imvCat6"
-        android:layout_width="@dimen/icon"
-        android:layout_height="@dimen/icon"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="82dp"
-        android:layout_marginStart="85dp"
-        android:src="@drawable/imagess_10" />
+        android:layout_width="@dimen/icon1"
+        android:layout_height="@dimen/icon1"
+        android:layout_alignStart="@+id/imvCat2"
+        android:layout_below="@+id/imvCat4"
+        android:layout_marginTop="-145dp"
+        android:src="@drawable/guideicon" />
 
     <ImageView
         android:id="@+id/imvCat4"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="200dp"
-        android:layout_width="@dimen/icon"
-        android:layout_height="@dimen/icon"
-        android:src="@drawable/minute_12" />
+        android:layout_width="@dimen/icon1"
+        android:layout_height="@dimen/icon1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="183dp"
+        android:layout_marginStart="78dp"
+        android:src="@drawable/mur" />
 
     <ImageView
         android:id="@+id/imvCat3"
-        android:layout_marginLeft="200dp"
-        android:layout_marginTop="100dp"
-        android:layout_width="@dimen/icon"
-        android:layout_height="@dimen/icon"
-        android:src="@drawable/minute_05" />
+        android:layout_width="@dimen/icon1"
+        android:layout_height="@dimen/icon1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imvCat2"
+        android:layout_marginEnd="66dp"
+        android:src="@drawable/scicon" />
 
     <ImageView
         android:id="@+id/imvCat2"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="100dp"
-        android:layout_width="@dimen/icon"
-        android:layout_height="@dimen/icon"
-        android:src="@drawable/imagess_29" />
+
+        android:layout_width="@dimen/icon1"
+        android:layout_height="@dimen/icon1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="154dp"
+        android:src="@drawable/clockicon" />
 
 </RelativeLayout>

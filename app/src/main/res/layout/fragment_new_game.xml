@@ -34,11 +34,11 @@
     <!--Question-->
     <ImageView
         android:id="@+id/imvQuestion"
-        android:layout_width="@dimen/icon"
-        android:layout_height="@dimen/icon"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="154dp" />
+        android:layout_marginTop="115dp" />
 
     <!--choice1-->
     <Button
@@ -91,9 +91,10 @@
     <ImageView
         android:id="@+id/imvEat"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/btnChoice2"
+        android:layout_height="230dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="153dp"
         android:src="@drawable/eat1" />
 
 

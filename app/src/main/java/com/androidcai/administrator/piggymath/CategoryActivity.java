@@ -47,8 +47,12 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
 
 
         imageView2.setOnClickListener(CategoryActivity.this);
+
+
         imageView3.setOnClickListener(CategoryActivity.this);
+
         imageView4.setOnClickListener(CategoryActivity.this);
+
         imageView5.setOnClickListener(CategoryActivity.this);
 
 
@@ -59,6 +63,7 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
 
         int modeInt = 0;
         Intent intent = new Intent(CategoryActivity.this, NewGameActivity.class);
+
 
         switch (v.getId()) {
 

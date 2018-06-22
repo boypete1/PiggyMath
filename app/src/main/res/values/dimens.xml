@@ -9,6 +9,7 @@
     <dimen name="image">180dp</dimen>
     <dimen name="zero">0dp</dimen>
     <dimen name="icon">150dp</dimen>
+    <dimen name="icon1">100dp</dimen>
     <dimen name="icon2">80dp</dimen>
 
 </resources>
