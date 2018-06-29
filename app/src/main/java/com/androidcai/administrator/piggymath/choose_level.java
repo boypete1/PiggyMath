@@ -20,6 +20,7 @@ public class choose_level extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_choose_level);
             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
             setSupportActionBar(toolbar);
 
             FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);

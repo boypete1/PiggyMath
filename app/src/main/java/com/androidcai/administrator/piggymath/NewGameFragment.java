@@ -3,8 +3,10 @@ package com.androidcai.administrator.piggymath;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Process;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -21,6 +23,7 @@ import org.w3c.dom.Text;
 import java.io.FileOutputStream;
 
 public class NewGameFragment extends Fragment {
+    public MediaPlayer startsound, clicksound, correctsound, wrongsound, endsound  ;
     private String userLoginString;
     private int modeAnInt, levelAnInt , timesAnInt = 0 ,scoreAnInt = 0, indexFalse = 0
             , countTime = 0 ;
@@ -56,6 +59,12 @@ public class NewGameFragment extends Fragment {
     private void showTime() {
         TextView textView = (TextView) getView().findViewById(R.id.txtShowTime);
 
+        startsound = MediaPlayer.create(getContext(), R.raw.bgm);
+        clicksound = MediaPlayer.create(getContext(), R.raw.click);
+        correctsound = MediaPlayer.create(getContext(),R.raw.ding);
+        wrongsound  = MediaPlayer.create(getContext(),R.raw.wrong);
+
+
         final int[] endTimesInts = myConstant.getTimeDelayInts(); //endTimesInts[leg]
         textView.setText("Time = "+ endTimesInts[levelAnInt] );
         Handler handler = new Handler();
@@ -65,6 +74,7 @@ public class NewGameFragment extends Fragment {
                 if (aBoolean && (endTimesInts[levelAnInt] > 0)) {
                     endTimesInts[levelAnInt] -= 1;
                     showTime();
+
                 } else {
                     finishGame();
                 }
@@ -80,7 +90,7 @@ public class NewGameFragment extends Fragment {
     private void showView(int indexInt) {
         ImageView imageView = (ImageView) getView().findViewById(R.id.imvQuestion);
         imageView.setImageResource(questionInts[0]);
-        questionInts[0] +=1;
+        questionInts[0] +=1; //
 
         Button choice1Button = (Button) getView().findViewById(R.id.btnChoice1);
         Button choice2Button = (Button) getView().findViewById(R.id.btnChoice2);
@@ -139,7 +149,7 @@ public class NewGameFragment extends Fragment {
         int[] ints = myConstant.getEatInts();
         if (answerInt == answerInts[timesAnInt]){
             scoreAnInt += 1;
-
+            correctsound.start();
             textView.setText("Score = "+ Integer.toString(scoreAnInt));
 
         }else {
@@ -147,6 +157,7 @@ public class NewGameFragment extends Fragment {
 
             if (indexFalse < ints.length) {
                 imageView.setImageResource(ints[indexFalse]);
+                wrongsound.start();
             } else {
                 finishGame();
             }
@@ -159,12 +170,12 @@ public class NewGameFragment extends Fragment {
 
 
     private void finishGame() {
-        Toast.makeText(getActivity(), "Finish Game",
+        Toast.makeText(getActivity(), "Finish Game ",
                 Toast.LENGTH_SHORT).show();
         String[] strings = new String[]{"Easy","Normal","Hard"};
         String  strFileName = "score.txt";
         String strFileContents = userLoginString + "\t\t\t\t\t\t "+ strings[levelAnInt] +" \t\t\t\t\t\t\t\t" + Integer.toString(scoreAnInt) +"\n";
-
+        startsound.stop();
         try {
             FileOutputStream fileOutputStream = getActivity().openFileOutput(strFileName, Context.MODE_APPEND);
             fileOutputStream.write(strFileContents.getBytes());
@@ -177,7 +188,9 @@ public class NewGameFragment extends Fragment {
         }
 
 
+
     }
+
 
     private void chooseQuestion() {
 
@@ -237,4 +250,18 @@ public class NewGameFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_new_game, container, false);
         return view;
     }
+
+
+    public void  onPause() {
+        //When the screen is about to turn off
+        startsound.pause();
+        super.onPause();
+    }
+
+    public void onResume(){
+        //When the screen turn on
+        startsound.start();
+        super.onResume();
+    }
+
 }

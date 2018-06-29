@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="31dp"
         android:layout_marginTop="23dp"
         android:text="Time = 100"
         android:textSize="@dimen/h1"
@@ -23,8 +23,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="46dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginTop="13dp"
         android:text="Score = 0"
         android:textSize="@dimen/h2"
         android:textStyle="bold"
@@ -34,11 +34,10 @@
     <!--Question-->
     <ImageView
         android:id="@+id/imvQuestion"
-        android:layout_width="350dp"
-        android:layout_height="150dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="115dp" />
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtShowTime" />
 
     <!--choice1-->
     <Button
@@ -90,11 +89,12 @@
 
     <ImageView
         android:id="@+id/imvEat"
-        android:layout_width="match_parent"
-        android:layout_height="230dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="153dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="163dp"
+        android:layout_marginEnd="78dp"
         android:src="@drawable/eat1" />
 
 

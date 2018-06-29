@@ -61,7 +61,7 @@
         <activity android:name=".ShowAnswer" />
         <activity android:name=".CategoryActivity" />
         <activity android:name=".NewGameActivity" />
-        <activity android:name=".Answer_view"></activity>
+        <activity android:name=".Answer_view" />
     </application>
 
 </manifest>

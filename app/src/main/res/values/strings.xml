@@ -13,5 +13,6 @@
     <string name="score">Your Score</string>
     <string name="play">Play Again</string>
     <string name="exit">Exit</string>
+    <string name="title_activity_end_view">End_view</string>
 
 </resources>

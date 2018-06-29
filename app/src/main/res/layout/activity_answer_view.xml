@@ -30,7 +30,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/minute_02"/>
+                android:src="@drawable/imagess_02"/>
 
             <TextView
 
@@ -43,12 +43,12 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/minute_05"/>
+                android:src="@drawable/imagess_05"/>
 
             <TextView
 
 
-                android:text="แปดนาฬิกา สี่สิบนาที"
+                android:text="แปดนาฬิกา ยี่สิบนาที"
                 android:textColorHighlight="#ffffff"
                 android:textSize="30dp"
                 android:layout_width="wrap_content"
@@ -56,175 +56,183 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/minute_07"/>
+                android:src="@drawable/imagess_07"/>
             <TextView
 
 
-                android:text="แปดนาฬิกา สี่สิบนาที"
+                android:text="สิบสามนาฬิกา ห้าสิบห้านาที"
                 android:textColorHighlight="#ffffff"
                 android:textSize="30dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/minute_07"/>
-            <TextView
+            <!--<TextView-->
 
 
-                android:text="แปดนาฬิกา สี่สิบนาที"
-                android:textColorHighlight="#ffffff"
-                android:textSize="30dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/minute_07"/>
-            <TextView
+                <!--android:text="แปดนาฬิกา สี่สิบนาที"-->
+                <!--android:textColorHighlight="#ffffff"-->
+                <!--android:textSize="30dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/minute_07"/>-->
+            <!--<TextView-->
 
 
-                android:text="แปดนาฬิกา สี่สิบนาที"
-                android:textColorHighlight="#ffffff"
-                android:textSize="30dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/minute_07"/>
-            <TextView
+                <!--android:text="แปดนาฬิกา สี่สิบนาที"-->
+                <!--android:textColorHighlight="#ffffff"-->
+                <!--android:textSize="30dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/minute_07"/>-->
+            <!--<TextView-->
 
 
-                android:text="แปดนาฬิกา สี่สิบนาที"
-                android:textColorHighlight="#ffffff"
-                android:textSize="30dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/minute_07"/>
-            <TextView
+                <!--android:text="แปดนาฬิกา สี่สิบนาที"-->
+                <!--android:textColorHighlight="#ffffff"-->
+                <!--android:textSize="30dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/minute_07"/>-->
+            <!--<TextView-->
 
 
-                android:text="แปดนาฬิกา สี่สิบนาที"
-                android:textColorHighlight="#ffffff"
-                android:textSize="30dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/minute_07"/>
-            <TextView
+                <!--android:text="แปดนาฬิกา สี่สิบนาที"-->
+                <!--android:textColorHighlight="#ffffff"-->
+                <!--android:textSize="30dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/minute_07"/>-->
+            <!--<TextView-->
 
 
-                android:text="แปดนาฬิกา สี่สิบนาที"
-                android:textColorHighlight="#ffffff"
-                android:textSize="30dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/minute_07"/>
-            <TextView
+                <!--android:text="แปดนาฬิกา สี่สิบนาที"-->
+                <!--android:textColorHighlight="#ffffff"-->
+                <!--android:textSize="30dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/minute_07"/>-->
+            <!--<TextView-->
 
 
-                android:text="แปดนาฬิกา สี่สิบนาที"
-                android:textColorHighlight="#ffffff"
-                android:textSize="30dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/minute_07"/>
-            <TextView
+                <!--android:text="แปดนาฬิกา สี่สิบนาที"-->
+                <!--android:textColorHighlight="#ffffff"-->
+                <!--android:textSize="30dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/minute_07"/>-->
+            <!--<TextView-->
 
 
-                android:text="แปดนาฬิกา สี่สิบนาที"
-                android:textColorHighlight="#ffffff"
-                android:textSize="30dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/minute_07"/>
-            <TextView
+                <!--android:text="แปดนาฬิกา สี่สิบนาที"-->
+                <!--android:textColorHighlight="#ffffff"-->
+                <!--android:textSize="30dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/minute_07"/>-->
+            <!--<TextView-->
 
 
-                android:text="แปดนาฬิกา สี่สิบนาที"
-                android:textColorHighlight="#ffffff"
-                android:textSize="30dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/minute_07"/>
-            <TextView
+                <!--android:text="แปดนาฬิกา สี่สิบนาที"-->
+                <!--android:textColorHighlight="#ffffff"-->
+                <!--android:textSize="30dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/minute_07"/>-->
+            <!--<TextView-->
 
 
-                android:text="แปดนาฬิกา สี่สิบนาที"
-                android:textColorHighlight="#ffffff"
-                android:textSize="30dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/minute_07"/>
-            <TextView
+                <!--android:text="แปดนาฬิกา สี่สิบนาที"-->
+                <!--android:textColorHighlight="#ffffff"-->
+                <!--android:textSize="30dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/minute_07"/>-->
+            <!--<TextView-->
 
 
-                android:text="แปดนาฬิกา สี่สิบนาที"
-                android:textColorHighlight="#ffffff"
-                android:textSize="30dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/minute_07"/>
-            <TextView
+                <!--android:text="แปดนาฬิกา สี่สิบนาที"-->
+                <!--android:textColorHighlight="#ffffff"-->
+                <!--android:textSize="30dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/minute_07"/>-->
+            <!--<TextView-->
 
 
-                android:text="แปดนาฬิกา สี่สิบนาที"
-                android:textColorHighlight="#ffffff"
-                android:textSize="30dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/minute_07"/>
-            <TextView
+                <!--android:text="แปดนาฬิกา สี่สิบนาที"-->
+                <!--android:textColorHighlight="#ffffff"-->
+                <!--android:textSize="30dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/minute_07"/>-->
+            <!--<TextView-->
 
 
-                android:text="แปดนาฬิกา สี่สิบนาที"
-                android:textColorHighlight="#ffffff"
-                android:textSize="30dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/minute_07"/>
-            <TextView
+                <!--android:text="แปดนาฬิกา สี่สิบนาที"-->
+                <!--android:textColorHighlight="#ffffff"-->
+                <!--android:textSize="30dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/minute_07"/>-->
+            <!--<TextView-->
 
 
-                android:text="แปดนาฬิกา สี่สิบนาที"
-                android:textColorHighlight="#ffffff"
-                android:textSize="30dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/minute_07"/>
+                <!--android:text="แปดนาฬิกา สี่สิบนาที"-->
+                <!--android:textColorHighlight="#ffffff"-->
+                <!--android:textSize="30dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/minute_07"/>-->
+            <!--<TextView-->
+
+
+                <!--android:text="แปดนาฬิกา สี่สิบนาที"-->
+                <!--android:textColorHighlight="#ffffff"-->
+                <!--android:textSize="30dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/minute_07"/>-->
 
 
 

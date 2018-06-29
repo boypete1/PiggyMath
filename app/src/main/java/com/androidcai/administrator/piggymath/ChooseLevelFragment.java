@@ -2,6 +2,8 @@ package com.androidcai.administrator.piggymath;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -13,13 +15,21 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class ChooseLevelFragment extends Fragment {
-
+    public MediaPlayer startsound, clicksound, correctsound, wrongsound, endsound , bgsound ;
     private int modelAnInt;
     private String userNameString;
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        startsound = MediaPlayer.create(getContext(),R.raw.littleidea);
+        bgsound   = MediaPlayer.create(getContext(),R.raw.bgm);
+        correctsound = MediaPlayer.create(getContext(),R.raw.ding);
+        wrongsound  = MediaPlayer.create(getContext(),R.raw.wrong);
+        endsound   = MediaPlayer.create(getContext(),R.raw.endsound);
+        startsound.setLooping(true);
+        startsound.start();
+        getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
 //        Get Value From SharePerfer
         getValueFromSharePerfer();
@@ -33,7 +43,11 @@ public class ChooseLevelFragment extends Fragment {
 //        True Answer Page
         TrueAnswer();
 
+
     }   // Main Method
+
+
+
 
     private void TrueAnswer() {
 
@@ -44,7 +58,9 @@ public class ChooseLevelFragment extends Fragment {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 sentToPlayGame(2);
+                startsound.stop();
             }
         });
     }
@@ -54,7 +70,9 @@ public class ChooseLevelFragment extends Fragment {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 sentToPlayGame(1);
+                startsound.stop();
             }
         });
     }
@@ -64,7 +82,9 @@ public class ChooseLevelFragment extends Fragment {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 sentToPlayGame(0);
+                startsound.stop();
             }
         });
     }
@@ -94,4 +114,17 @@ public class ChooseLevelFragment extends Fragment {
         View view = inflater.inflate(R.layout.activity_choose_level, container, false);
         return view;
     }
+
+    public void  onPause() {
+        //When the screen is about to turn off
+        startsound.pause();
+        super.onPause();
+    }
+
+    public void onResume(){
+        //When the screen turn on
+        startsound.start();
+        super.onResume();
+    }
+
 }
