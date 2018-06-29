@@ -27,6 +27,7 @@ public class ChooseLevelFragment extends Fragment {
         correctsound = MediaPlayer.create(getContext(),R.raw.ding);
         wrongsound  = MediaPlayer.create(getContext(),R.raw.wrong);
         endsound   = MediaPlayer.create(getContext(),R.raw.endsound);
+        clicksound = MediaPlayer.create(getContext(), R.raw.click);
         startsound.setLooping(true);
         startsound.start();
         getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -60,6 +61,7 @@ public class ChooseLevelFragment extends Fragment {
             public void onClick(View v) {
 
                 sentToPlayGame(2);
+                clicksound.start();
                 startsound.stop();
             }
         });
@@ -72,6 +74,7 @@ public class ChooseLevelFragment extends Fragment {
             public void onClick(View v) {
 
                 sentToPlayGame(1);
+                clicksound.start();
                 startsound.stop();
             }
         });
@@ -84,6 +87,7 @@ public class ChooseLevelFragment extends Fragment {
             public void onClick(View v) {
 
                 sentToPlayGame(0);
+                clicksound.start();
                 startsound.stop();
             }
         });
